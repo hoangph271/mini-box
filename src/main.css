@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  --scale: 1 / 2;
+}
+
+.MiniBox {
+  margin: 1rem;
+  width: calc(540px * var(--scale));
+  height: calc(860px * var(--scale));
+  border: 1px solid #80808080;
+  box-sizing: border-box;
+  border-radius: calc(8px * var(--scale));
+}
+
+.MiniPhoto {
+  background-color: black;
+  width: calc(460px * var(--scale));
+  height: calc(620px * var(--scale));
+  margin: calc(40px * var(--scale)) auto;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: calc(40px * var(--scale));
+}
+
+.MiniDivider {
+  border-bottom: 1px solid #80808080;
+}
